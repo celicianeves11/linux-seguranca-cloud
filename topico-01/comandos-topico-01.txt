@@ -1,0 +1,17 @@
+1. whoami
+   Finalidade: Identificar o utilizador atualmente ativo no terminal.
+
+2. uname -a
+   Finalidade: Consultar a versão do kernel Linux, arquitetura do sistema e nome do host.
+
+3. cat /etc/os-release
+   Finalidade: Verificar o nome e versão exata da distribuição Linux.
+
+4. free -h
+   Finalidade: Consultar a utilização total, usada e disponível da memória RAM.
+
+5. df -h
+   Finalidade: Verificar o espaço livre e ocupado nos discos/partições do sistema.
+
+6. uptime
+   Finalidade: Verificar há quanto tempo a máquina está ligada e a carga média do sistema.

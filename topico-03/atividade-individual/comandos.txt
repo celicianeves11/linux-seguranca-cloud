@@ -1,0 +1,17 @@
+1. mkdir -p topico-03/atividade-individual/site evidencias
+   Finalidade: Criar a estrutura de diretórios do projeto e pasta de evidências.
+
+2. sudo apt update && sudo apt install nginx -y
+   Finalidade: Atualizar os repositórios e instalar o servidor web Nginx.
+
+3. sudo mkdir -p /var/www/html/topico-03
+   Finalidade: Criar o diretório de publicação do site no servidor Nginx.
+
+4. sudo cp -r site/* /var/www/html/topico-03/
+   Finalidade: Copiar os ficheiros HTML e CSS para o diretório raiz do servidor web.
+
+5. sudo chown -R www-data:www-data /var/www/html/topico-03
+   Finalidade: Ajustar a propriedade dos ficheiros para o utilizador do servidor Nginx.
+
+6. curl -I http://localhost/topico-03/index.html
+   Finalidade: Validar o cabeçalho HTTP de resposta do servidor web (Retornou HTTP/1.1 200 OK).
