@@ -1,0 +1,20 @@
+1. ss -tulpn
+   Finalidade: Identificar serviços e portas ativas no sistema operativo.
+
+2. sudo ufw status
+   Finalidade: Verificar o estado inicial da firewall UFW.
+
+3. sudo ufw allow ssh
+   Finalidade: Permitir ligações de gestão remota via SSH (Porta 22).
+
+4. sudo ufw allow 'Nginx HTTP'
+   Finalidade: Permitir tráfego de entrada para o servidor web Nginx (Porta 80).
+
+5. sudo ufw enable
+   Finalidade: Ativar as regras de filtragem da firewall UFW no sistema.
+
+6. sudo ufw status verbose
+   Finalidade: Validar o estado ativo da firewall e listar as regras configuradas.
+
+7. curl -I http://localhost/topico-03/index.html
+   Finalidade: Validar que o servidor web Nginx permanece acessível após a ativação da firewall.
