@@ -1,0 +1,29 @@
+1. uptime
+   Finalidade: Verificar o tempo de atividade do sistema e a carga média (load average).
+
+2. free -h
+   Finalidade: Monitorizar a utilização da memória RAM e Swap de forma legível.
+
+3. df -h /
+   Finalidade: Verificar o espaço em disco disponível e utilizado na partição principal.
+
+4. systemctl status nginx
+   Finalidade: Confirmar o estado operacional do serviço web Nginx (active/running).
+
+5. sudo journalctl -u nginx -n 20 --no-pager
+   Finalidade: Consultar os registos (logs) recentes de arranque e operação do Nginx.
+
+6. sudo tail -n 20 /var/log/nginx/access.log
+   Finalidade: Analisar os registos de acessos HTTP recebidos pelo servidor web.
+
+7. sudo tar -czvf ~/backup-site-topico03.tar.gz /var/www/html/topico-03
+   Finalidade: Criar um backup comprimido (.tar.gz) do diretório crítico do site.
+
+8. mkdir -p /tmp/teste-recuperacao
+   Finalidade: Criar um diretório isolado para testar o procedimento de restauro.
+
+9. tar -xzvf ~/backup-site-topico03.tar.gz -C /tmp/teste-recuperacao
+   Finalidade: Restaurar os ficheiros do backup na pasta de teste.
+
+10. ls -la /tmp/teste-recuperacao/var/www/html/topico-03/
+    Finalidade: Validar a integridade dos ficheiros restaurados.
